@@ -1,0 +1,27 @@
+# Path to your oh-my-zsh installation.
+export ZSH="/home/connor/.oh-my-zsh"
+
+# Set name of the theme to load --- if set to "random", it will
+ZSH_THEME="robbyrussell"
+
+# Uncomment the following line to use case-sensitive completion.
+CASE_SENSITIVE="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+COMPLETION_WAITING_DOTS="true"
+
+# oh-my-zsh plugins
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+
+# Preferred editor for local and remote sessions
+export EDITOR=vim
+
+# Custom locations
+export DOTFILES=/home/$USER/Projects/dotfiles
+export NOTES=/home/$USER/Documents/Notes
+
+# Custom functions
+source $DOTFILES/zsh/networking.sh
+source $DOTFILES/zsh/mobile.sh
