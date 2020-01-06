@@ -19,8 +19,16 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR=vim
 
 # Custom locations
-export DOTFILES=/home/$USER/Projects/dotfiles
 export NOTES=/home/$USER/Documents/Notes
+export PROJECTS=/home/$USER/Projects
+export DOTFILES=$PROJECTS/dotfiles
+STRING_TRACE=$PROJECTS/stringtrace
+
+# PATH exports
+# Using the variable MY_PATHS, that way I can distinguish between what I added to PATH and what applications added to path.
+# It also helps keep the configuration a little cleaner. 
+export MY_PATHS=$STRING_TRACE
+export PATH=$MY_PATHS:$PATH
 
 # Custom functions
 source $DOTFILES/zsh/networking.sh
