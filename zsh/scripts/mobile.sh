@@ -8,3 +8,8 @@ function fetch_apk(){
 	apk_path=$(echo -n $apk_path | tr -d "\r" | tr -d "\n")
 	adb pull $apk_path $2
 }
+
+function jadp(){
+	find $1 -name '*.class' -exec jad -o -r -sjava {} \;
+	find $1 -name '*.class' -exec rm {} \;
+}
