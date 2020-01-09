@@ -30,6 +30,8 @@ STRING_TRACE=$PROJECTS/stringtrace
 export MY_PATHS=$STRING_TRACE
 export PATH=$MY_PATHS:$PATH
 
-# Custom functions
-source $DOTFILES/zsh/networking.sh
-source $DOTFILES/zsh/mobile.sh
+# Source custom functions
+for script in $(ls $DOTFILES/zsh/scripts/)
+do
+     source $DOTFILES/zsh/scripts/$script
+done

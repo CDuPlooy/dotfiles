@@ -1,4 +1,7 @@
 #!/bin/bash
 
-# Symlink zshrc
-ln -f -s ~/Projects/dotfiles/zsh/zshrc ~/.zshrc 
+# Run stow recursively
+for dir in $(ls -d */)
+do
+	stow -v -R $dir -t ~
+done
