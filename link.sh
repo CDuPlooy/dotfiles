@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Run stow recursively
-for dir in $(ls -d */)
+for fp in $(ls -d */)
 do
-	stow -v -R $dir -t ~
+	stow -v -R "$fp" -t ~
 done

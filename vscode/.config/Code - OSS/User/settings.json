@@ -1,0 +1,15 @@
+{
+    "workbench.colorTheme": "Monokai Pro",
+    "workbench.iconTheme": "Monokai Pro Icons",
+    "editor.fontFamily": "iosevka",
+    "editor.fontSize": 17,
+    "[markdown]": {
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": false
+    },
+    "[latex]": {
+        "editor.formatOnPaste": false,
+        "editor.formatOnSave": false,
+        "editor.suggestSelection": "recentlyUsedByPrefix"
+    },
+}
