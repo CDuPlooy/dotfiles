@@ -2,7 +2,8 @@
     "workbench.colorTheme": "Monokai Pro",
     "workbench.iconTheme": "Monokai Pro Icons",
     "editor.fontFamily": "iosevka",
-    "editor.fontSize": 17,
+    "editor.fontSize": 14,
+    
     "[markdown]": {
         "editor.wordWrap": "on",
         "editor.quickSuggestions": false
@@ -12,4 +13,8 @@
         "editor.formatOnSave": false,
         "editor.suggestSelection": "recentlyUsedByPrefix"
     },
+    "[python]":{
+        "python.jediEnabled": true,
+    },
+    "window.zoomLevel": 0
 }

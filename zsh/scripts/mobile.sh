@@ -17,3 +17,13 @@ function jadp(){
 	find $1 -name '*.class' -exec jad -o -r -sjava {} \;
 	find $1 -name '*.class' -exec rm {} \;
 }
+
+function lsai(){
+	if [ $# -eq 0 ]
+  	then
+    	   dir=$PWD
+	else
+	   dir=$1
+	fi
+	grep -R "import " $dir | cut -d ":" -f2 | cut -d " " -f2 | cut -d ";" -f1 | sort | uniq
+}
