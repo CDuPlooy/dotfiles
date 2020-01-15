@@ -7,7 +7,7 @@ import functools
 import math
 
 parser = argparse.ArgumentParser(description='Process some integers.')
-parser.add_argument('-v', dest="verbose", default='store_false',
+parser.add_argument('-v', dest="verbose", default=False, action='store_true',
                     help='Verbose output')
 parser.add_argument('--data', dest="data", help='Specify data as an argument')
 
@@ -28,7 +28,7 @@ entropy =  -sum(p* math.log(p, 2) for p in probability.values())
 if entropy == -0.0:
     entropy = 0
 
-if args.verbose:
-    print(f"{buffer.decode()}:{entropy}")
+if args.verbose != None:
+    print(f"{entropy}:{buffer.decode()}")
 else:
     print(entropy)
