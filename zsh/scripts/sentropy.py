@@ -29,6 +29,6 @@ if entropy == -0.0:
     entropy = 0
 
 if args.verbose:
-    print(f"{buffer}:{entropy}")
+    print(f"{buffer.decode()}:{entropy}")
 else:
     print(entropy)
