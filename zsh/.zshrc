@@ -28,10 +28,10 @@ STRING_TRACE=$PROJECTS/stringtrace
 # Using the variable MY_PATHS, that way I can distinguish between what I added to PATH and what applications added to path.
 # It also helps keep the configuration a little cleaner. 
 export MY_PATHS=$STRING_TRACE
-export PATH=$MY_PATHS:$PATH
+export PATH=$DOTFILES/zsh/scripts/:$MY_PATHS:$PATH
 
 # Source custom functions
-for script in $(ls $DOTFILES/zsh/scripts/)
+for script in $(ls $DOTFILES/zsh/scripts/*.sh)
 do
-     source $DOTFILES/zsh/scripts/$script
+     source $script
 done
