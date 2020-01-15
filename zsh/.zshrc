@@ -16,7 +16,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
-export EDITOR=vim
+export EDITOR=emacs
 
 # Custom locations
 export NOTES=/home/$USER/Documents/Notes
@@ -35,3 +35,6 @@ for script in $(ls $DOTFILES/zsh/scripts/*.sh)
 do
      source $script
 done
+
+# Disable bracketed paste
+unset zle_bracketed_paste
