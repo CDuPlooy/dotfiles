@@ -27,4 +27,8 @@ for key, value in counter.items():
 entropy =  -sum(p* math.log(p, 2) for p in probability.values())
 if entropy == -0.0:
     entropy = 0
-print(entropy)
+
+if args.verbose:
+    print(f"{buffer}:{entropy}")
+else:
+    print(entropy)
