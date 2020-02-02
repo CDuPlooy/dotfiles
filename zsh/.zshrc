@@ -15,6 +15,9 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+# Locale Settings
+LC_CTYPE=en_ZA.UTF-8
+LC_ALL=en_ZA.UTF-8
 # Preferred editor for local and remote sessions
 export EDITOR=emacs
 
